@@ -118,26 +118,29 @@
 \maketitle
 \section{Kovalente bindinger i organiske molekyler}
 
-Under visse omstændigheder vil to atomer der mødes danne et molekyle, hvor de to atomer er bundet sammen af en kovalent binding. I dette afsnit skal vi undersøge hvilke betingelser der netop gælder om denne type bindinger, der er grundlæggende for forståelsen af hvordan IR-spektra forekommer. For at forstå hvorfor to atomer vælger at gå sammen om at danne en binding hvori de deler deres elektroner er vi nødsaget til lige at betragte et enkelt atoms elektronkonfiguration. De subatomare entiteter som elektroner er opfører sig ikke lige så pænt som Bohr formulerede i hans atommodel, hvor elektronerne bevæger sig i cirkulære baner, eller skaller, rundt omkring atomets kerne. Ifølge nyere MOT (Læs: Molekylær Orbital Teori) har elektronerne en chance for at eksistere i visse områder omkring atomet. Disse områder er bestemt af hvor mange elektroner atomet har. Idéen om skallerne er ikke fuldstændig, men den molekylære orbital teori udbyggger de enkelte skaller, der behandles i Bohr model, med nogle undergrupper, som kaldes orbitaler. Det laveste energiniveau en elektron kan befinde sig i, når det bevæger sig rundt om atomkernen er kugleformet og har tildelt navnet 1s orbitalen. Figur 1 er en skitse af 1s orbitalen. 
+Under visse omstændigheder vil to atomer der mødes danne et molekyle, hvor de to atomer er bundet sammen af en kovalent binding. I dette afsnit skal vi undersøge hvilke betingelser der netop gælder om denne type bindinger, der er grundlæggende for forståelsen af hvordan IR-spektra forekommer.
+
+\subsection{Orbitaler}
+For at forstå hvorfor to atomer vælger at gå sammen om at danne en binding hvori de deler deres elektroner er vi nødsaget til lige at betragte et enkelt atoms elektronkonfiguration. De subatomare entiteter som elektroner er opfører sig ikke lige så pænt som Bohr formulerede i hans atommodel, hvor elektronerne bevæger sig i cirkulære baner, eller skaller, rundt omkring atomets kerne. Ifølge nyere MOT (Læs: Molekylær Orbital Teori) har elektronerne en chance for at eksistere i visse områder omkring atomet. Disse områder er bestemt af hvor mange elektroner atomet har. Idéen om skallerne er ikke fuldstændig, men den molekylære orbital teori udbyggger de enkelte skaller, der behandles i Bohr model, med nogle undergrupper, som kaldes orbitaler. Det laveste energiniveau en elektron kan befinde sig i, når det bevæger sig rundt om atomkernen er kugleformet og har tildelt navnet 1s orbitalen. Figur 1 er en skitse af 1s orbitalen. 
 
 \begin{figure}[ht!]
   \centering
-  \begin{tikzpicture}[scale=2.5]
+  \begin{tikzpicture}[scale=2]
   \begin{scope}[font=\itshape]% to not type it every time, but better go for math mode
 
 
-  \draw[-latex] (3,0)--(4,0) node[above]{x};
-  \draw[-latex] (3,0)--(2.5,-0.7) node[above]{y};
-  \draw[-latex] (3,0)--(3,1) node[above]{z};
-  \orbital[pos = {(3,0)}]{s} 
-  \node[above] at (3.7,0.7) {1s orbital};
+  \draw[-latex] (5,0)--(7,0) node[above]{x};
+  \draw[-latex] (5,0)--(4.5,-0.7) node[above]{y};
+  \draw[-latex] (5,0)--(5,1) node[above]{z};
+  \orbital[pos = {(5,0)}]{s} 
+  \node[above] at (5.7,0.7) {1s orbital};
 
  		
   \end{scope}
 
   % correctly setting the background layer
   \begin{pgfonlayer}{backbackground}
-  \fill[LightBlue1](current bounding box.south west)rectangle
+  \fill[white](current bounding box.south west)rectangle
   (current bounding box.north east);
   \end{pgfonlayer}
   \end{tikzpicture}
@@ -173,11 +176,71 @@ TEST
   \end{scope}
   % correctly setting the background layer
   \begin{pgfonlayer}{backbackground}
-  \fill[LightBlue1](current bounding box.south west)rectangle
+  \fill[white](current bounding box.south west)rectangle
   (current bounding box.north east);
   \end{pgfonlayer}
   \end{tikzpicture}
-  \caption{1s orbital} \end{figure}
+  \caption{$2p_x$, $2p_y$, $2p_z$ orbital} \end{figure}
+
+I 3 skal kan der være 18 elektroner. Disse elektroner bliver først fyldt ind i en 3s orbital, der ligner både 1s og 2s orbitalen i og med, at den er kugleformet. Radius på 3s orbitalen er større end på 2s orbitalen grundet det højere energiniveau. 6 af de resterende 16 elektroner kan dernæst findes i 3p orbitalerne. Der er, ligesom 2p-orbitalerne, også tre 3p-orbitaler - $3p_x$,$3p_y$ og en $3p_z$ orbital. For det illustrative formål kan vi bare betragte 2p-orbitalerne. 3p-orbitalerne ligner dem, men elektronerne kan bare befinde sig i større sløjfer end 2p-orbitalerne. 
+
+Nu har vi kigget på de simpleste af orbitalerne, s- og p-orbitalerne. Der eksisterer også d og f orbitaler. f-orbitalerne vil jeg ikke beskæftige mig med, men p-orbitalerne er illustretet  figur 3. (Se figur 3 og 4) 
+\\
+
+\begin{figure}[ht!]
+  \centering
+  \begin{tikzpicture}[scale=1.5]
+  \begin{scope}[font=\itshape]% to not type it every time, but better go for math mode
+
+ \draw[-latex] (0,0)--(1,0) node[above]{x};
+  \draw[-latex] (0,0)--(-0.5,-0.7) node[above]{y};
+  \draw[-latex] (0,0)--(0,1) node[above]{z};
+  \orbital[pos = {(0,0)}]{dxy}
+  \node[above] at (0.7,0.7) {$d_{xy}$};
+	
+  \draw[-latex] (3,0)--(3.5,0.7);
+  \draw[-latex] (3,0)--(4,0) node[above]{x};
+  \draw[-latex] (3,0)--(2.5,-0.7) node[above]{y};
+  \draw[-latex] (3,0)--(3,1) node[above]{z};
+  \orbital[pos = {(3,0)}]{dxz} 
+  \node[above] at (3.7,0.7) {$d_{xz}$};
+
+  \draw[-latex] (6,0)--(7,0) node[above]{x};
+  \draw[-latex] (6,0)--(5.5,-0.7) node[above]{y};
+  \draw[-latex] (6,0)--(6,1) node[above]{z};
+  \orbital[pos = {(6,0)}]{dyz}
+  \node[above] at (6.7,0.7) {$d_{yz}$};
+  
+  \draw[-latex] (1,-2)--(2,-2) node[above]{x};
+  \draw[-latex] (1,-2)--(0.5,-2.7) node[above]{y};
+  \draw[-latex] (1,-2)--(1,-1) node[above]{z};
+  \orbital[pos = {(1,-2)}]{dx2y2}
+  \node[above] at (1.7,-1.3) {$x^{2}-y^{2}$};
+
+  \draw[-latex] (5,-2)--(6,-2) node[above]{x};
+  \draw[-latex] (5,-2)--(4.5,-2.7) node[above]{y};
+  \draw[-latex] (5,-2)--(5,-1) node[above]{z};
+  \orbital[pos = {(5,-2)}]{dz2}
+  \node[above] at (5.7,-1.3) {$z^2$};
+  
+  \end{scope}
+  % correctly setting the background layer
+  \begin{pgfonlayer}{backbackground}
+  \fill[white](current bounding box.south west)rectangle
+  (current bounding box.north east);
+  \end{pgfonlayer}
+  \end{tikzpicture}
+  \caption{$d_{xy}$, $d_{xz}$, $d_{yz}$, $x^{2}-y^{2}$, $z^2$ orbitalerne} 
+  \end{figure}
+
+\subsection{MO-teori}
+I molekylær orbital teori, forkortet MO-teori, ses der på fordelingen af elektroner i molekyler på samme måde som vi ser på molekyler i atomer (FODNOTE TIL GENERAL CHEMISTRY s.149 mangler). Måden hvorpå vi bestemmer hvordan en elektron opfører sig på i et molekyle er ved hjælp af kvantemekanik og en bølgefunktion $\Psi$. På denne måde kan energien af en elektron og formen på det område hvori en elektron bevæger sig i bestemmes. Dette vil jeg kun berøre sporadisk. Som vi i afsnit 1.1 fandt ud af at elektroner i forskellige energiniveauer havde størst chance for at eksistere i forskellige områder som vi kaldte orbitaler, ligeså har elektroner i molekyler også orbitaler som de har en stor chance for at eksistere i. Forskellen er bare, at i molekyler kan elektronerne findes nær kernen på en hvilken som helst kerne, der indgår i molekylet; hvilket er hvorfor vi kalder disse orbitaler for molekylære elektronorbitaler eller bare molekylære orbitaler. 
+Ligesom atomare orbitaler er molekyære orbitaler også fyldt når de indeholder præcist 2 orbitaler med modsat spin. 
+\\
+
+Da vi så de atomare orbitaler gav vi dem navnene, s,p,d og f. Molekylære orbitaler har også navne, men jeg vil i denne opgave primært have fokus på hhv. $\pi$-orbitaler og $\sigma$-orbitaler. Vi betragter et eksempel med et homonukleært diatomisk molekyle som $H_2$. Hver af de to hydrogenatomer, der indgår i 
+\pagebreak
+
 
 
 Det er nemmelig ikke alle atomer, der har mulighed for at danne kovalente bindinger imellem sig. Når 2 atomer går sammen om at danne en kovalent binding er det fordi, at de hver især er ustabile. At de er ustabile er ens betydende med, at de ikke har deres orbitaler af højeste energiniveau fyldt ud. 

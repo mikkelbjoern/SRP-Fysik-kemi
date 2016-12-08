@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.18)  8 DEC 2016 16:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.18)  8 DEC 2016 19:11
 entering extended mode
 **Main.tex
 (C:\Users\Dyedia\SRP-Fysik-kemi\Main.tex
@@ -1319,75 +1319,85 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 221--225
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
+Underfull \hbox (badness 10000) in paragraph at lines 237--240
+
+ []
+
+[2] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 284--288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 235--237
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 298--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--246
+Underfull \hbox (badness 10000) in paragraph at lines 304--306
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
 
  []
 
 \tf@thm=\write7
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 253.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 253.
+[6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
  (C:\Users\Dyedia\SRP-Fysik-kemi\Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 253.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 253.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 9ECD0A7D6DD615989D2BE7D7496507BC;663.
+(rerunfilecheck)             Checksum: B5C28A35626B229AF8F0C8F499018C1C;782.
  ) 
 Here is how much of TeX's memory you used:
- 26125 strings out of 493921
- 506383 string characters out of 3147279
- 650839 words of memory out of 3000000
- 28923 multiletter control sequences out of 15000+200000
- 13050 words of font info for 50 fonts, out of 3000000 for 9000
+ 26152 strings out of 493921
+ 506840 string characters out of 3147279
+ 663839 words of memory out of 3000000
+ 28945 multiletter control sequences out of 15000+200000
+ 14298 words of font info for 55 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 54i,8n,77p,1272b,961s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,9n,77p,1010b,961s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmti12.pfb>
-Output written on Main.pdf (4 pages, 122473 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Main.pdf (6 pages, 148519 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
