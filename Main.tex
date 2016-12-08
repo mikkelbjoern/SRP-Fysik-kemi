@@ -9,7 +9,6 @@
 
 %KEMI ORBITAL SRP%
 
-
 \usepackage[x11names]{xcolor}
 \usepackage{tcolorbox}% no need in this mwe
 \usepackage[font=small]{caption}% no need in this mwe
@@ -132,7 +131,7 @@ For at forstå hvorfor to atomer vælger at gå sammen om at danne en binding hv
   \draw[-latex] (5,0)--(7,0) node[above]{x};
   \draw[-latex] (5,0)--(4.5,-0.7) node[above]{y};
   \draw[-latex] (5,0)--(5,1) node[above]{z};
-  \orbital[pos = {(5,0)}]{s} 
+  \orbital[color = purple, pos = {(5,0)}]{s} 
   \node[above] at (5.7,0.7) {1s orbital};
 
  		
@@ -158,20 +157,20 @@ TEST
  \draw[-latex] (0,0)--(1,0) node[above]{x};
   \draw[-latex] (0,0)--(-0.5,-0.7) node[above]{y};
   \draw[-latex] (0,0)--(0,1) node[above]{z};
-  \orbital[pos = {(0,0)}]{py}
+  \orbital[pcolor = purple, pos = {(0,0)}]{py}
   \node[above] at (0.7,0.7) {p$_x$};
 	
   \draw[-latex] (3,0)--(3.5,0.7);
   \draw[-latex] (3,0)--(4,0) node[above]{x};
   \draw[-latex] (3,0)--(2.5,-0.7) node[above]{y};
   \draw[-latex] (3,0)--(3,1) node[above]{z};
-  \orbital[pos = {(3,0)}]{px} 
+  \orbital[pcolor = purple, pos = {(3,0)}]{px} 
   \node[above] at (3.7,0.7) {p$_y$};
 
   \draw[-latex] (6,0)--(7,0) node[above]{x};
   \draw[-latex] (6,0)--(5.5,-0.7) node[above]{y};
   \draw[-latex] (6,0)--(6,1) node[above]{z};
-  \orbital[pos = {(6,0)}]{pz}
+  \orbital[pcolor = purple, pos = {(6,0)}]{pz}
   \node[above] at (6.7,0.7) {p$_z$};
   \end{scope}
   % correctly setting the background layer
@@ -195,32 +194,32 @@ Nu har vi kigget på de simpleste af orbitalerne, s- og p-orbitalerne. Der eksis
  \draw[-latex] (0,0)--(1,0) node[above]{x};
   \draw[-latex] (0,0)--(-0.5,-0.7) node[above]{y};
   \draw[-latex] (0,0)--(0,1) node[above]{z};
-  \orbital[pos = {(0,0)}]{dxy}
+  \orbital[pcolor = purple, pos = {(0,0)}]{dxy}
   \node[above] at (0.7,0.7) {$d_{xy}$};
 	
   \draw[-latex] (3,0)--(3.5,0.7);
   \draw[-latex] (3,0)--(4,0) node[above]{x};
   \draw[-latex] (3,0)--(2.5,-0.7) node[above]{y};
   \draw[-latex] (3,0)--(3,1) node[above]{z};
-  \orbital[pos = {(3,0)}]{dxz} 
+  \orbital[pcolor = purple, pos = {(3,0)}]{dxz} 
   \node[above] at (3.7,0.7) {$d_{xz}$};
 
   \draw[-latex] (6,0)--(7,0) node[above]{x};
   \draw[-latex] (6,0)--(5.5,-0.7) node[above]{y};
   \draw[-latex] (6,0)--(6,1) node[above]{z};
-  \orbital[pos = {(6,0)}]{dyz}
+  \orbital[pcolor = purple, pos = {(6,0)}]{dyz}
   \node[above] at (6.7,0.7) {$d_{yz}$};
   
   \draw[-latex] (1,-2)--(2,-2) node[above]{x};
   \draw[-latex] (1,-2)--(0.5,-2.7) node[above]{y};
   \draw[-latex] (1,-2)--(1,-1) node[above]{z};
-  \orbital[pos = {(1,-2)}]{dx2y2}
+  \orbital[pcolor = purple, pos = {(1,-2)}]{dx2y2}
   \node[above] at (1.7,-1.3) {$x^{2}-y^{2}$};
 
   \draw[-latex] (5,-2)--(6,-2) node[above]{x};
   \draw[-latex] (5,-2)--(4.5,-2.7) node[above]{y};
   \draw[-latex] (5,-2)--(5,-1) node[above]{z};
-  \orbital[pos = {(5,-2)}]{dz2}
+  \orbital[pcolor = purple, pos = {(5,-2)}]{dz2}
   \node[above] at (5.7,-1.3) {$z^2$};
   
   \end{scope}
@@ -238,7 +237,36 @@ I molekylær orbital teori, forkortet MO-teori, ses der på fordelingen af elekt
 Ligesom atomare orbitaler er molekyære orbitaler også fyldt når de indeholder præcist 2 orbitaler med modsat spin. 
 \\
 
-Da vi så de atomare orbitaler gav vi dem navnene, s,p,d og f. Molekylære orbitaler har også navne, men jeg vil i denne opgave primært have fokus på hhv. $\pi$-orbitaler og $\sigma$-orbitaler. Vi betragter et eksempel med et homonukleært diatomisk molekyle som $H_2$. Hver af de to hydrogenatomer, der indgår i 
+\subsubsection{$\pi$- \& $\sigma$-orbitaler}
+
+Da vi så de atomare orbitaler gav vi dem navnene, s,p,d og f. Molekylære orbitaler har også navne, men jeg vil i denne opgave primært have fokus på hhv. $\pi$-orbitaler og $\sigma$-orbitaler. Vi betragter et eksempel med et homonukleært diatomisk molekyle som $H_2$. De to hydrogenatomer der er bundet sammen har hver deres egen elektron, men når de er sig tilpas tæt nok på hinanden vil elektronerne mere eller mindre befinde sig mellem de to kerner. Da elektronerne er negativt ladede og de 2 hydrogenkerner er positivt ladede, vil elektronerne blive tiltrukket af begge kerner og have et lavere niveau af energi end de ville have isolerede (MANGLER NOTE GENERAL CHEMISTRY SIDE 150). Elektronerne søger at have en så lav energi som muligt vil de befinde sig mellem de to kerner og stabilisere molekylet. Denne slags orbitaler kaldes \textbf{bindende} orbitaler, da de som navnet antyder binder molekylet sammen. På figur 4 er det illustreret hvordan to atomare orbitaler går sammen om at danne en bindende orbital. 
+
+\begin{figure}[ht!]
+  \centering
+  \begin{tikzpicture}[scale=2]
+  \begin{scope}[font=\itshape]% 
+
+  \draw[-latex] (0,-1)--(0,1) node[above]{Stigende energi};
+  \orbital[color = purple, opacity = 1, scale = 2, pos = {(1,0.65)}]{s} 
+  \orbital[color = purple, opacity = 1, scale = 2, pos = {(2,0.65)}]{s} 
+  \node[above] at (1,0) {s orbital};
+  \node[above] at (2,0) {s orbital};
+	\draw[-latex] (2.5,0.65)--(3.5,-0.10);
+ 		
+ \orbital[color = purple, opacity = 1, scale = 2, pos = {(4,-0.5)}]{s} 
+  \orbital[color = purple, opacity = 0.3, scale = 2, pos = {(4.5,-0.5)}]{s}  		
+ 		
+  \end{scope}
+
+  \begin{pgfonlayer}{backbackground}
+  \fill[white](current bounding box.south west)rectangle
+  (current bounding box.north east);
+  \end{pgfonlayer}
+  \end{tikzpicture}
+  \caption{1s orbital} \end{figure}
+
+
+
 \pagebreak
 
 
