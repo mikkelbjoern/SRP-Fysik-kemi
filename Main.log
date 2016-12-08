@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.18)  8 DEC 2016 20:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.18)  8 DEC 2016 21:52
 entering extended mode
 **Main.tex
 (C:\Users\Dyedia\SRP-Fysik-kemi\Main.tex
@@ -1354,17 +1354,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 240.
 
 [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 312--316
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 318--322
 
  []
 
@@ -1373,7 +1363,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--325
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
@@ -1383,7 +1373,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--331
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 332--334
 
  []
@@ -1393,24 +1383,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--337
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--343
+
+ []
+
 \tf@thm=\write7
 [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 350.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 350.
  (C:\Users\Dyedia\SRP-Fysik-kemi\Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 350.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 350.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: F4EF8C7B63CF1FC54B09B372695FAF45;860.
  ) 
 Here is how much of TeX's memory you used:
- 26163 strings out of 493921
- 507047 string characters out of 3147279
+ 26164 strings out of 493921
+ 507064 string characters out of 3147279
  663839 words of memory out of 3000000
- 28954 multiletter control sequences out of 15000+200000
+ 28955 multiletter control sequences out of 15000+200000
  14298 words of font info for 55 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 54i,9n,77p,1056b,963s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,9n,77p,1070b,969s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
@@ -1420,7 +1420,7 @@ nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 msfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Main.pdf (6 pages, 152387 bytes).
+Output written on Main.pdf (6 pages, 153222 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  23 named destinations out of 1000 (max. 500000)
