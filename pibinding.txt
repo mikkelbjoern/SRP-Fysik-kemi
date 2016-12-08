@@ -1,0 +1,84 @@
+\begin{tikzpicture}[scale=0.5]
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (-2.5,0) .. controls (0,1) and         (.5,0.5) .. (.5,0)
+.. controls (.5,-.5) and (0,-1) .. (-2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (2.5,0) .. controls (.5,1) and     (-.5,0.5) .. (-.5,0)
+.. controls (-.5,-.5) and (.5,-1) .. (2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (-2.5,0) .. controls (-3.5,2.5)     and (-3,3) .. (-2.5,3)
+.. controls (-2,3) and (-1.5,2.5) .. (-2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (-2.5,0) .. controls (-3.5,-2.5)     and (-3,-3) .. (-2.5,-3)
+.. controls (-2,-3) and (-1.5,-2.5) .. (-2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (-2.5,0) .. controls (-4,0.5) and     (-5,0.83) .. (-4.5,1.5)
+.. controls (-4,2.17) and (-3.5,1.31) .. (-2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (-2.5,0) .. controls (-4,-0.5)     and (-5,-0.83) .. (-4.5,-1.5)
+.. controls (-4,-2.17) and (-3.5,-1.31) .. (-2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (2.5,0) .. controls (-3.5+5,2.5)     and (-3+5,3) .. (2.5,3)
+.. controls (-2+5,3) and (-1.5+5,2.5) .. (2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (2.5,0) .. controls (-3.5+5,-2.5)     and (-3+5,-3) .. (2.5,-3)
+.. controls (-2+5,-3) and (-1.5+5,-2.5) .. (2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (2.5,0) .. controls (4,0.5) and     (5,0.83) .. (4.5,1.5)
+.. controls (4,2.17) and (3.5,1.31) .. (2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (2.5,0) .. controls (4,-0.5) and     (5,-0.83) .. (4.5,-1.5)
+.. controls (4,-2.17) and (3.5,-1.31) .. (2.5,0);
+
+\shade[shading=ball, ball color=blue,opacity=0.6] (4.5,1.5) circle (0.5);
+
+\shade[shading=ball, ball color=blue,opacity=0.6] (4.5,-1.5) circle (.5);
+
+\shade[shading=ball, ball color=blue,opacity=0.6] (-4.5,-1.5) circle (.5);
+
+\shade[shading=ball, ball color=blue,opacity=0.6] (-4.5,1.5) circle (.5);
+
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (-2.5,0) .. controls (0,1) and     (.5,0.5) .. (.5,0)
+.. controls (.5,-.5) and (0,-1) .. (-2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (2.5,0) .. controls (.5,1) and     (-.5,0.5) .. (-.5,0)
+.. controls (-.5,-.5) and (.5,-1) .. (2.5,0);
+
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (-2.5,0) .. controls (-4,0.5) and     (-5,0.83) .. (-4.5,1.5)
+.. controls (-4,2.17) and (-3.5,1.31) .. (-2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (-2.5,0) .. controls (-4,-0.5)     and (-5,-0.83) .. (-4.5,-1.5)
+.. controls (-4,-2.17) and (-3.5,-1.31) .. (-2.5,0);
+
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (2.5,0) .. controls (4,0.5) and     (5,0.83) .. (4.5,1.5)
+.. controls (4,2.17) and (3.5,1.31) .. (2.5,0);
+
+\shade[shading=ball, ball color=gray,draw,opacity=.7] (2.5,0) .. controls (4,-0.5) and     (5,-0.83) .. (4.5,-1.5)
+.. controls (4,-2.17) and (3.5,-1.31) .. (2.5,0);
+
+\shade[shading=ball, ball color=purple,opacity=0.6] (4.5,1.5) circle (0.5);
+
+\shade[shading=ball, ball color=purple,opacity=0.6] (4.5,-1.5) circle (.5);
+
+\shade[shading=ball, ball color=purple,opacity=0.6] (-4.5,-1.5) circle (.5);
+
+\shade[shading=ball, ball color=purple,opacity=0.6] (-4.5,1.5) circle (.5);
+
+
+\shade[shading=ball, ball color=black,draw,opacity=.7] (-2.5,0) .. controls (-3.5,2.5)     and (-3,3) .. (-2.5,3)
+.. controls (0,2) .. (2.5,3)
+.. controls (3,3) and (3.5,2.5) .. (2.5,0)
+.. controls (1.5,1) .. (0,1)
+.. controls (-2,1) .. (-2.5,0);
+
+
+\shade[shading=ball, ball color=black,draw,opacity=.7] (-2.5,0) .. controls (-3.5,-2.5)     and (-3,-3) .. (-2.5,-3)
+.. controls (0,-2) .. (2.5,-3)
+.. controls (3,-3) and (3.5,-2.5) .. (2.5,-0)
+.. controls (1.5,-1) .. (0,-1)
+.. controls (-2,-1) .. (-2.5,-0);
+
+\end{tikzpicture}
