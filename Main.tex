@@ -7,6 +7,22 @@
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
+%KEMI ORBITAL SRP%
+
+
+\usepackage[x11names]{xcolor}
+\usepackage{tcolorbox}% no need in this mwe
+\usepackage[font=small]{caption}% no need in this mwe
+\usepackage{float}% no need in this mwe
+\usepackage{floatflt}% no need in this mwe
+
+\usepackage{tikz} 
+\usepackage{tikzorbital}
+\usetikzlibrary{fadings,patterns,backgrounds,fit,arrows}
+\pgfdeclarelayer{backbackground}
+\pgfsetlayers{backbackground,background,main}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{titlepic}
 \usepackage{enumerate}
@@ -102,9 +118,65 @@
 \maketitle
 \section{Kovalente bindinger i organiske molekyler}
 
-Under visse omstændigheder vil to atomer der mødes danne et molekyle, hvor de to atomer er bundet sammen af en kovalent binding. I dette afsnit skal vi undersøge hvilke betingelser der netop gælder om denne type bindinger, der er grundlæggende for forståelsen af hvordan IR-spektra forekommer. For at forstå hvorfor to atomer vælger at gå sammen om at danne en binding hvori de deler deres elektroner er vi nødsaget til lige at betragte et enkelt atoms elektronkonfiguration. De subatomare entiteter som elektroner er opfører sig ikke lige så pænt som Bohr formulerede i hans atommodel, hvor elektronerne bevæger sig i cirkulære baner, eller skaller, rundt omkring atomets kerne. Ifølge nyere MOT (Læs: Molekylær Orbital Teori) har elektronerne en chance for at eksistere i visse områder omkring atomet. Disse områder er bestemt af hvor mange elektroner atomet har. Idéen om skallerne er ikke fuldstændig, men den molekylære orbital teori udbyggger de enkelte skaller, der behandles i Bohr model, med nogle undergrupper, som kaldes orbitaler. Det laveste energiniveau en elektron kan befinde sig i, når det bevæger sig rundt om atomkernen er kugleformet og har tildelt navnet 1s orbitalen.  
+Under visse omstændigheder vil to atomer der mødes danne et molekyle, hvor de to atomer er bundet sammen af en kovalent binding. I dette afsnit skal vi undersøge hvilke betingelser der netop gælder om denne type bindinger, der er grundlæggende for forståelsen af hvordan IR-spektra forekommer. For at forstå hvorfor to atomer vælger at gå sammen om at danne en binding hvori de deler deres elektroner er vi nødsaget til lige at betragte et enkelt atoms elektronkonfiguration. De subatomare entiteter som elektroner er opfører sig ikke lige så pænt som Bohr formulerede i hans atommodel, hvor elektronerne bevæger sig i cirkulære baner, eller skaller, rundt omkring atomets kerne. Ifølge nyere MOT (Læs: Molekylær Orbital Teori) har elektronerne en chance for at eksistere i visse områder omkring atomet. Disse områder er bestemt af hvor mange elektroner atomet har. Idéen om skallerne er ikke fuldstændig, men den molekylære orbital teori udbyggger de enkelte skaller, der behandles i Bohr model, med nogle undergrupper, som kaldes orbitaler. Det laveste energiniveau en elektron kan befinde sig i, når det bevæger sig rundt om atomkernen er kugleformet og har tildelt navnet 1s orbitalen. Figur 1 er en skitse af 1s orbitalen. 
+
+\begin{figure}[ht!]
+  \centering
+  \begin{tikzpicture}[scale=2.5]
+  \begin{scope}[font=\itshape]% to not type it every time, but better go for math mode
 
 
+  \draw[-latex] (3,0)--(4,0) node[above]{x};
+  \draw[-latex] (3,0)--(2.5,-0.7) node[above]{y};
+  \draw[-latex] (3,0)--(3,1) node[above]{z};
+  \orbital[pos = {(3,0)}]{s} 
+  \node[above] at (3.7,0.7) {1s orbital};
+
+ 		
+  \end{scope}
+
+  % correctly setting the background layer
+  \begin{pgfonlayer}{backbackground}
+  \fill[LightBlue1](current bounding box.south west)rectangle
+  (current bounding box.north east);
+  \end{pgfonlayer}
+  \end{tikzpicture}
+  \caption{1s orbital} \end{figure}
+  
+  I s-orbitalerne er der plads til netop 2 elektroner. At den første orbital hedder 1s henviser til at den tilhører skal 1. I 2. skal tilhører elektronerne 2s orbitalen. s fordi at orbitalen er kugleformet og 2 fordi orbitalen knytter sig til 2. skal. Orbitalen ligner 1s orbitalen til forveksling, men vil have en større radius da elektronerne der befinder sig i denne orbital har mere energi. Da vi ved, at der skal være 8 elektroner i den 2. skal for, at oktetreglen er opfyldt og atomerne derfor er stabile mangler vi stadigvæk at placere 6 elektroner. Disse elektroner vil befinde sig i de såkaldte p-orbitaler. Der eksisterer 3 forskellige p-orbitaler, som ligner sløjfer og som hver især indeholder 2 elektroner. De tre p-orbitaler benævnes respektivt $p_x$, $p_y$ og $p_z$, da de er ortogonale på hinanden og ligger langs hhv. x, y og z aksen. De er på figur 2 illustreret i et kartesisk koordinatsystem.
+  
+ 
+\begin{figure}[ht!]
+  \centering
+  \begin{tikzpicture}[scale=1.5]
+  \begin{scope}[font=\itshape]% to not type it every time, but better go for math mode
+
+ \draw[-latex] (0,0)--(1,0) node[above]{x};
+  \draw[-latex] (0,0)--(-0.5,-0.7) node[above]{y};
+  \draw[-latex] (0,0)--(0,1) node[above]{z};
+  \orbital[pos = {(0,0)}]{py}
+  \node[above] at (0.7,0.7) {p$_x$};
+	
+  \draw[-latex] (3,0)--(3.5,0.7);
+  \draw[-latex] (3,0)--(4,0) node[above]{x};
+  \draw[-latex] (3,0)--(2.5,-0.7) node[above]{y};
+  \draw[-latex] (3,0)--(3,1) node[above]{z};
+  \orbital[pos = {(3,0)}]{px} 
+  \node[above] at (3.7,0.7) {p$_y$};
+
+  \draw[-latex] (6,0)--(7,0) node[above]{x};
+  \draw[-latex] (6,0)--(5.5,-0.7) node[above]{y};
+  \draw[-latex] (6,0)--(6,1) node[above]{z};
+  \orbital[pos = {(6,0)}]{pz}
+  \node[above] at (6.7,0.7) {p$_z$};
+  \end{scope}
+  % correctly setting the background layer
+  \begin{pgfonlayer}{backbackground}
+  \fill[LightBlue1](current bounding box.south west)rectangle
+  (current bounding box.north east);
+  \end{pgfonlayer}
+  \end{tikzpicture}
+  \caption{1s orbital} \end{figure}
 
 
 Det er nemmelig ikke alle atomer, der har mulighed for at danne kovalente bindinger imellem sig. Når 2 atomer går sammen om at danne en kovalent binding er det fordi, at de hver især er ustabile. At de er ustabile er ens betydende med, at de ikke har deres orbitaler af højeste energiniveau fyldt ud. 
