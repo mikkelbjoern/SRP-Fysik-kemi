@@ -318,7 +318,7 @@ På samme måde som med $\sigma$-orbitalerne dannes $\pi$-orbitalerne ved, at to
 Nu har vi set på både $\sigma$-orbitaler /bindinger og $\pi$-orbitaler / bindinger - men hver for sig. Hvis de to orbitaler eksisterer sammentidigt i et molekyle har vi faktisk en dobbeltbinding. Dobbeltbindinger er netop en $\sigma$- og en $\pi$-binding. Illustret som en tegning ville det se ud på følgende måde, se Figur 6: 
 
 \begin{center}
-\begin{tikzpicture}
+\begin{tikzpicture}[scale=0.75]
 
 \shade[shading=ball, ball color=gray,draw,opacity=.7] (-2.5,0) .. controls (0,1) and     (.5,0.5) .. (.5,0)
 .. controls (.5,-.5) and (0,-1) .. (-2.5,0);
@@ -368,82 +368,19 @@ Nu har vi set på både $\sigma$-orbitaler /bindinger og $\pi$-orbitaler / bindi
 
 \draw[-latex] (0,-1.9)--(3,-4) node[below]{ };
 
+
+\node[above] at (0,-6.5){figur 6: };
 \end{tikzpicture}
 \end{center}
 
+$\sigma$-bindingerne er de stærkestee af de kovalente bindinger. Dernæst kommer $\pi$-bindingerne. blabla MO teori...
 
 
+Det er nemmelig ikke alle atomer, der har mulighed for at danne kovalente bindinger imellem sig. Når 2 atomer går sammen om at danne en kovalent binding er det fordi, at de hver især er ustabile. At de er ustabile er ens betydende med, at de ikke har deres orbitaler af højeste energiniveau fyldt ud. Hver orbital vil gerne have en spin-op og en spin-ned elektron. Når nogle atomer så alligevel ikke vælger at gå sammen og danne en kovalent binding er det enten fordi, at de har for mange mange elektroner til, at de kun kan befinde sig mellem atomerne og danne en bindende $\sigma$-binding og derfor befinder sig i en orbital, der kræver et højere energiniveau og derfor er anti-bindende. 
+
+\subsection{kovalente bindinger}
+Så det vi fandt ud af i dette afsnit var, at når 2 atomer går sammen og deler deres elektroner for at opnå en lavere energitilstand dannes nogle bindinger som vi kalder kovalente bindinger. Kovalente bindinger dannes når atomer, der har lige stor tilbøjelighed til at afgive elektroner mødes. Et eksempel på et organisk molekyle, der dannes kovalente bindinger er ethylen. Her ses det tydeligt hvordan de to p-orbitaler går sammen i midten af molekylet om at lave en $\sigma_p$-(se figur 6). Delter elektroner findes primært mellem de positivt ladede atomkerner og den elektrostatiske tiltrækning mellem de to positivt ladede kerner og de to negativt ladede elektroner holder molekylet sammen. Det bånd der bliver dannet som et resultat af dette er meget stærkt. 
 
 
-
-Det er nemmelig ikke alle atomer, der har mulighed for at danne kovalente bindinger imellem sig. Når 2 atomer går sammen om at danne en kovalent binding er det fordi, at de hver især er ustabile. At de er ustabile er ens betydende med, at de ikke har deres orbitaler af højeste energiniveau fyldt ud. 
-
-\section{Energipakkerne}
-\subsection{Nabo- og singlepakker}
-Vi har lavet 6 forskellige pakker, som beboerne kan vælge. Disse er inddelt i to kategorier: Nabo- og singlepakker.
-I nabopakkerne kan man gå sammen med sin nabo om en fælles løsning for begge husstande, som er både pladsbesparende og er bedre for hele byens økonomi. 
-
-Hvis man ikke har lyst til at samarbejde med sin nabo, kan man vælge en af singlepakkerne. 
-Her er man ikke afhængig af sin nabo, men man får selvfølgelig ikke de fordele som nabopakkerne giver. 
-
-\subsection{Pakker med forskellige energityper}
-Når man har valgt om man vil have en nabo- eller en singlepakke, rådgiver vores flyer om hvilken energipakke der vil passe godt til en given husstand ud fra hvilken retning huset er bygget. 
-Vi har valgt at kalde disse tre pakker for: Sol-, vind- og kombipakken ud fra hvilken energikilde der primært bruges til at producere energi. 
-Der er nogle pakker der kun kan bruges af huse der vender rigtigt. Solpakken kan kun anvendes af brugere der bor meget sydvendt, men er tilgengæld billigere. 
-På samme måde kan man ikke anvende kombipakken hvis man bor i direkte østlig eller vestlig retning. 
-Den teoretiske baggrund for dette samt præcise vinkler et hus kan have i forholdt til østlig retning er angivet i et senere afsnit.  
-
-\pagebreak
-
-\subsection{Anbefalinger af pakker}
-\subsubsection{Teoretisk baggrund}
-For at anbefale forskellige husstande forskellige pakker, har vi været nødsaget til at finde en måde at beskrive \%MY (læs: \%maximal yield) har vi defineret en funktion: $Yield(v):$  $[0,180] \rightarrow [0,1]$ med forskriften: $19.35 \cdot sin(0.01851x + 6.238) + 80$. 
-Funktionen kan med god tilnærmelse beskrive \%MY som funktion af vinklen som husstanden er roteret mod urets retning (Hvis linjen der måles vinklen til er trukket fra vest til øst). 
-På baggrund af denne funktion, er det derfor nu muligt, at fortælle om det giver mening 
-
-\subsubsection{Teoretisk udledning for tærskelværdierne}
-
-I multipakken (single) og solpakken (single) er der grænser for husets orientering. 
-Der er selvfølgelig en bagvedliggende matematisk forklaring på dette. 
-Vi har set på måneden hvor solindstrålingen er på sit laveste. Huset har selvfølgelig brug for sit gennemsnitlige forbrug af el året rundt dækket - dette ved vi er 300kWh (ud fra de 3600kWh på et år). 
-Det kan oplagt blive et problem at en husholdning ikke har nok strøm med en kombination af en solcelle og vindenergi, hvis der effektiviteten af solcellen er for lav. 
-For at sikre os at dette ikke sker, betragter vi en sammenhæng der må gælde for at husholdningen har strøm nok. Vi introducerer tre variable $E_{vind},E_{sol}$ og $k$ som er hhv. energien fra vindmøller, den maksimale energi fra solcellen og effektiviteten af solcellen, der kan udregnes på baggrund af vinklen huset har:
-$$E_{vind}+k\cdot E_{sol} = 300$$
-Fra denne sammenhæng får vi oplagt
-$k = \dfrac{300-E_{vind}}{E_{sol}}$. 
-Her er k den minimale \%MAY. k er så udregnet for de forskellige pakker. Det er dog kun multipakken (single) og solpakken (single) der har vist sig at give problemer, og derfor har en grænse. Vi har konverteret minimum \%MAY til grader ud fra vores funktion, der er beskrevet i det teoretiske afsnit.
-
-\subsubsection{Praktisk forklaring}
-Vi vil nu betragte pakkerne og forklarer hvorfor vi har valgt at anbefale netop disse pakker udfra husenes placering og orientering. 
-\\
-Lad os tage udgangspunkt i singlepakkerne:
-\\
-
-Vindmøllepakken (single): Pakken indeholder en mellem vindmølle. Vi har vurderet at med en mellem vindmølle kan man holde sig selvforsynende på energi året rundt. Derfor er denne pakke tilgængelig for alle. 
-\\
-
-Multipakken (single): Pakken indeholder en small vindmølle og en small solcelle. Denne løsning er foreslået til dem, der ikke vil have en større vindmølle placeret i deres have. Dette er en muligvis hvis husets front er orienteret i en vinkel mellem 13.5 og 164 grader med vandret, hvor vandret er en streg der går fra øst mod vest. Den bagvedliggende grund for at der er en grænse for orienteringen ligger i teorien, der er beskrevet i forrige afsnit (Teoretisk baggrund). Solcellen skal sammen med vindmøllen kunne forsyne husstanden i vintermånederne, hvor solenergien er lav. Dette kan ikke lade sig gøre uden for de givne grader, da solindstrålingen ikke er høj nok dér. 
-\\
-
-Solpakken (single): Pakken indeholder en stor solcelle. Løsningen for dem, der ikke ønsker at have en vindmølle. Denne løsning er mulig for beboere med et hus, hvis front er orienteret mellem 57 og 118 grader med vandret, hvor vandret er en streg der går fra øst mod vest. I denne solpakke er der også en grænse og forklaringen er den samme som i multipakken (single). 
-\\
-
-Nu kigger vi på nabopakkerne:
-\\
-
-Nabopakkerne er pakker for dem, der ønsker i samarbejde med sin nabo, at dele en fælles grøn energi. Dette er altså en parløsning for 2 naboer.
-\\
-
-Vindmøllepakken (nabo): Pakken indeholder én stor vindmølle. Pakken er for dem, der ikke har noget i mod, at have en stor vindmølle stående i haven. Den store vindmølle kan holde begge husstande forsynede året rundt. Vindmøllepakken har ikke nogle krav om orientering.
-\\
-
-Multipakken (nabo): Pakken indeholder en mellem vindmølle og en lille solcelle. Den kan også forsyne begge husstande året rundt og har ikke nogle krav om hverken beliggenhed eller orientering. 
-\\
-
-
-
-\section{Afrundning}
-Vi mener at vi med denne ordning, giver alle en mulighed for at vælge en løsning, som passer på deres behov, men hvor de samtidig ikke behøver at sætte sig ind i de tekniske begrundelser. 
-Samtidig er vi sikre på med denne ordning, at alle har strøm hele året rundt. 
 
 \end{document}
